@@ -8,8 +8,6 @@ rightWristY = 0;
 function preload(){
 
     HarryPotter = loadSound("Harry Potter.mp3");
-    HarryPotterRemix = loadSound("music.mp3");
-    WarRobots = loadSound("War Robots.mp3");
     Christmas = loadSound("Christmas.mp3");
 } 
 
@@ -35,48 +33,15 @@ function draw(){
 
 
 
-function play(){
 
-
-
-    s_name = document.getElementById("song_name").value;
-
-    if(s_name == "HarryPotter"){
-        song = HarryPotter;
-        song.play();
-
-    }
-    else if(s_name == "HarryPotterMix"){
-        song = HarryPotterRemix;
-        song.play();
-
-       
-    }
-
-    else if(s_name == "WarRobots"){
-        song = WarRobots;
-        song.play();
-    }
-
-    else if(s_name == "Christmas"){
-        song = Christmas;
-        song.play();
-    }
 
     song.setVolume(1);
     song.rate(1);
 
    
-}
 
-function stop(){
 
-    HarryPotter.stop();
-    HarryPotterRemix.stop();
-    WarRobots.stop();
-    Christmas.stop();
 
-}
 
 function gotPoses(results)
 {
